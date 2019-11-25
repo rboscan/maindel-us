@@ -1,0 +1,17 @@
+nav.navbar{
+    background-color: rgb(255, 255, 255);
+};
+
+label.btn.btn-secondary.black-bg {
+    padding:30px;
+};
+
+#navbarNavDropdown div.btn-group {
+    background-color: blue;
+}
+
+#navbarNavDropdown label.btn.btn-secondary.black-bg{
+    background-color:blue;
+    color: white;
+
+}
