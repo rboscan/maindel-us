@@ -1,6 +1,20 @@
+body div.header {
+    position: relative;
+    padding-top:10px;
+    height:40px;
+    background-color: grey;
+    width:100%;
+    text-align:center;
+    font-family: 'Helvetica','Arial',sans-serif;
+    color: rgba(18,2,123);
+    font-weight:900;
+    font-size:20px;
+}
+
 /* Navbar Formatting Start */
 nav.navbar{
     background-color: rgb(255, 255, 255);
+    padding-bottom:0;
 }
 /* Logo */
 .navbar-brand{
@@ -29,9 +43,10 @@ nav.navbar{
     border-color:white;
     padding: 20px 15px 20px 15px;
     margin-right:2px;
-    font-size: 1vw;
+    font-size: 1.25vw;
     font-family: 'Helvetica','Arial',sans-serif;
     box-shadow: none;
+    font-weight: 600;
 
 }
 #navbarSupportedContent.navbar-collapse .btn.active{
@@ -60,12 +75,14 @@ nav.navbar{
     backdrop-filter: blur(10px);
     border-radius: 10px;
     background-color:rgba(255, 255, 255, 0.5);
+    
 }
 
 .main h1{
     font-size:25px;
     color: black;
     font-weight:1000;
+    font-family: 'Helvetica','Arial',sans-serif;
 }
 
 .main p{
@@ -73,6 +90,7 @@ nav.navbar{
     padding-top:10px;
     font-size:18px;
     font-weight:1000;
+    font-family: 'Helvetica','Arial',sans-serif;
 }
 
 /* Main Formatting End */
@@ -89,5 +107,7 @@ nav.navbar{
     width:100%;
     text-align:center;
     padding-top: 0.5vw;
+    color: rgba(18,2,123);
+    font-weight: 600;
     font-family: 'Helvetica','Arial',sans-serif;
 }
