@@ -47,7 +47,7 @@ nav.navbar{
     font-family: 'Helvetica','Arial',sans-serif;
     box-shadow: none;
     font-weight: 600;
-
+    border-radius:10px;
 }
 #navbarSupportedContent.navbar-collapse .btn.active{
     color:white;
