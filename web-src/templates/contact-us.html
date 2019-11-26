@@ -17,14 +17,14 @@
         <span> +1-804-564-3039 | rafael.boscan@maindel.com </span>
     </div>
     <nav class="navbar navbar-expand-lg navbar-light">
-        <img src='../css/img/logo-transparent.png' class="navbar-brand" onclick="window.location='index.html';"></a>
+        <img src='../css/img/logo-transparent.png' class="navbar-brand" href="index.html"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse btn-group btn-group-toggle" data-toggle="buttons"
             id="navbarSupportedContent">
-            <label class="btn btn-secondary active" onclick="window.location='index.html';">
+            <label class="btn btn-secondary" onclick="window.location='index.html';">
                 <input type="radio" name="Home" id="home-nav" autocomplete="off" onclick="window.location='/';" /> HOME
             </label>
             <label class="btn btn-secondary" onclick="window.location='about-us.html';">
@@ -36,29 +36,47 @@
             <label class="btn btn-secondary" onclick="window.location='customers.html';">
                 <input type="radio" name="Customers" id="customers-nav" autocomplete="off"> CUSTOMERS
             </label>
-            <label class="btn btn-secondary" onclick="window.location='contact-us.html';">
+            <label class="btn btn-secondary active" onclick="window.location='contact-us.html';">
                 <input type="radio" name="Contact Us" id="contact-nav" autocomplete="off"> CONTACT US
             </label>
         </div>
     </nav>
-
-    <div class="main">
-        <img src="../css/img/richmond-header2.jpg">
-        <div class="image-box">
-            <h1>M.A. INDEL, LLC is an Industrial Specialties Solution Provider</h1>
-        </div>
-        <div class="main-body">
-            <p>M.A. INDEL, LLC has been in business for 10 years and is based in Richmond, Virginia. Our scope of projects
-                have included orders with consumable goods for a kitchen to a KOHLER KD-2000 Diesel Generators, yeast agitators,
-                augers, et. all.
-                Having sourced materials for projects and customers in various locations around the world we know no
-                boundaries
-                that would prevent us from making sure you recieve the best price and solution the market has to
-                offer.
-            </p>
-        </div>
+    <div class="contact-header">
+        <img src="../css/img/richmond-int3.jpg">
     </div>
-    <footer class="footer">
+    <div class="contact-us">
+        <p>Please input your information below, we will be in touch with you as soon as possible.</p>
+        <form class="form-box">
+            <div class="form-row">
+                <div class="form-group col">
+                    <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="form-group col">
+                    <input type="text" class="form-control" placeholder="Last name">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col">
+                    <input type="text" class="form-control" placeholder="yourname@email.com">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col">
+                    <input type="text" class="form-control" placeholder="Company">
+                </div>
+                <div class="form-group col">
+                    <input type="text" class="form-control" placeholder="Phone">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col">
+                    <label for="exampleFormControlTextarea1"></label>
+                    <textarea class="form-control" id="message-box" rows="3" placeholder="Quote/Request"></textarea>
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer class="footer-contact">
         <div class="container">
             <span>© 2019 M.A. INDEL, LLC | All Rights Reserved </span>
         </div>
