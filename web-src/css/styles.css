@@ -127,7 +127,7 @@ nav.navbar {
     width: 30%;
     min-width: 200px;
     min-height: 100px;
-    margin: 0 2.5% 0 0;
+    margin: 0 4% 2% 0;
     box-shadow: 10px 10px 5px grey;
 }
 
@@ -214,6 +214,7 @@ input:focus.form-control {
 /* Services Formatting Start */
 .card{
     display:inline-block;
+    margin: 3%;
 }
 /* Services Formatting End */
 /* Footer */
