@@ -1,3 +1,10 @@
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
 body div.header {
     position: static;
     padding-top: 10px;
@@ -106,7 +113,7 @@ nav.navbar {
 /* About Us Formatting Start*/
 
 .main-about {
-    margin: 2.5% 10% 0 10%;
+    margin: 4% 10% 0 10%;
 }
 
 .main-about p {
@@ -125,13 +132,14 @@ nav.navbar {
 }
 
 .rafa {
-    margin: 15% 0 12% 0;
+    margin: 12% 0 12% 0;
 }
 
 /* About Us Formatting End */
 
 /* Contact Us Formatting Start */
-.contact-header img {
+
+/* .contact-header img {
     width: 100%;
     height: 30vw;
     position: relative;
@@ -139,21 +147,22 @@ nav.navbar {
     min-height: 735px;
     padding: 0;
     margin: 0;
+} */
+#gear{
+    margin: 0 20% 0 20%;
 }
-
 div.contact-us {
     box-shadow: 1px 1px 1px 1px;
-    position: fixed;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
     backdrop-filter: blur(15px);
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0);
-    width: 30vw;
-    height: 26.5vw;
+    background-color: rgba(0, 0, 0, 0.404);
+    margin-top:4%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 3%;
+    width: 750px;
+    height: 500px;
     padding: 20px 20px 20px 20px;
-    margin: 0px;
 }
 
 div.contact-us p {
@@ -176,6 +185,7 @@ div.contact-us p {
 textarea.form-control {
     margin-top: 1%;
     resize: none;
+    height: 130px;
     overflow: scroll;
     color: black;
 }
@@ -201,6 +211,11 @@ input:focus.form-control {
 
 /* Contact Us Formatting End */
 
+/* Services Formatting Start */
+.card{
+    display:inline-block;
+}
+/* Services Formatting End */
 /* Footer */
 .footer .container {
     width: 100%;
