@@ -1,13 +1,32 @@
-@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
-@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
-@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
-@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+@media (min-width:320px) {
+    /* smartphones, iPhone, portrait 480x320 phones */
+}
+
+@media (min-width:481px) {
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+
+@media (min-width:641px) {
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+
+@media (min-width:961px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+
+@media (min-width:1025px) {
+    /* big landscape tablets, laptops, and desktops */
+}
+
+@media (min-width:1281px) {
+    /* hi-res laptops and desktops */
+}
 
 body div.header {
     position: static;
-    padding-top: 10px;
+    font-size: 100%;
+    padding-top: 12.5px;
+    top: 0;
     height: 40px;
     background-color: grey;
     width: 100%;
@@ -15,7 +34,6 @@ body div.header {
     font-family: 'Helvetica', 'Arial', sans-serif;
     color: rgba(18, 2, 123);
     font-weight: 900;
-    font-size: 20px;
 }
 
 /* Navbar Formatting Start */
@@ -52,13 +70,26 @@ nav.navbar {
     background-color: white;
     border-radius: 0;
     border-color: white;
-    padding: 20px 15px 20px 15px;
+    padding: 25px 5px 25px 5px;
     margin-right: 2px;
     font-size: 1.25vw;
     font-family: 'Helvetica', 'Arial', sans-serif;
     box-shadow: none;
     font-weight: 600;
-    border-radius: 10px;
+    cursor: pointer;
+}
+
+#navbarSupportedContent.navbar-collapse .btn-outline-primary:hover {
+    color: white;
+    background-color: rgba(18, 2, 123);
+    border-radius: 0;
+    background-color: rgba(18, 2, 123);
+    padding: 25px 5px 25px 5px;
+    margin-right: 2px;
+    font-size: 1.25vw;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    box-shadow: none;
+    font-weight: 600;
     cursor: pointer;
 }
 
@@ -76,7 +107,7 @@ nav.navbar {
 }
 
 .main img {
-    height: 450px;
+    height: 50vh;
     width: 100%;
     position: relative;
 }
@@ -94,20 +125,44 @@ nav.navbar {
 
 .main h1 {
     font-size: 30px;
-    color: black;
+    color: rgba(18, 2, 123);
     font-weight: 1000;
     font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
-.main p {
+.col-sm.description {
     color: black;
     padding-top: 10px;
     font-size: 20px;
-    font-weight: 700;
     font-family: 'Helvetica', 'Arial', sans-serif;
     margin: 0 10% 9% 10%;
 }
-
+.small-logo{
+    color: black;
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    text-align: left;
+}
+.business-logo{
+    color: black;
+    padding-top: 10px;
+    font-size: 40px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    margin-right: 85px;
+}
+.big-logo{
+    color: black;
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+.projects-logo{
+    color: black;
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
 /* Index/Main Formatting End */
 
 /* About Us Formatting Start*/
@@ -117,7 +172,8 @@ nav.navbar {
 }
 
 .main-about p {
-    padding: 0 10% 0 0;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 2vh;
 }
 
 .main-about img {
@@ -127,46 +183,49 @@ nav.navbar {
     width: 30%;
     min-width: 200px;
     min-height: 100px;
-    margin: 0 4% 2% 0;
+    margin: 0 4% 2vh 0;
     box-shadow: 10px 10px 5px grey;
 }
 
+.maria {
+    margin: 5vw 0 5vw 0;
+}
+
 .rafa {
-    margin: 12% 0 12% 0;
+    margin: 5vw 0 5vw 0;
 }
 
 /* About Us Formatting End */
 
 /* Contact Us Formatting Start */
-
-/* .contact-header img {
-    width: 100%;
-    height: 30vw;
+.contactus-content {
     position: relative;
-    min-width: 1000px;
-    min-height: 735px;
-    padding: 0;
-    margin: 0;
-} */
-#gear{
-    margin: 0 20% 0 20%;
+    min-height: 100vh;
+    background-image: url("../css/img/richmond-int3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 20vh 0vh 0vh 0vh;
 }
+
 div.contact-us {
-    box-shadow: 1px 1px 1px 1px;
+    /* box-shadow: 1px 1px 1px 1px; */
     position: relative;
     backdrop-filter: blur(15px);
     background-color: rgba(0, 0, 0, 0.404);
-    margin-top:4%;
-    margin-left:auto;
-    margin-right:auto;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 3%;
     width: 750px;
-    height: 500px;
+    height: 540px;
     padding: 20px 20px 20px 20px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
 div.contact-us p {
-    color: rgba(18, 2, 123);
+    color: rgb(255, 255, 255);
     font-size: 25px;
     font-weight: 700;
     font-family: 'Helvetica', 'Arial', sans-serif;
@@ -201,7 +260,7 @@ input.form-control {
     margin-top: 1%;
     margin-left: auto;
     font-family: 'Helvetica', 'Arial', sans-serif;
-    color:black;
+    color: black;
 }
 
 input:focus.form-control {
@@ -209,13 +268,25 @@ input:focus.form-control {
     font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
+.btn-primary{
+    background-color: rgba(18, 2, 123);
+    border-color: rgba(18, 2, 123);
+}
+.center-button {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    margin-top: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 /* Contact Us Formatting End */
 
 /* Services Formatting Start */
-.card{
-    display:inline-block;
+.card {
+    display: inline-block;
     margin: 3%;
 }
+
 /* Services Formatting End */
 /* Footer */
 .footer .container {
@@ -223,31 +294,29 @@ input:focus.form-control {
 }
 
 .footer {
-    position: sticky;
-    left:0;
+    position: absolute;
     bottom: 0;
     height: 40px;
-    background-color: grey;
     width: 100%;
+    font-size: 100%;
+    background-color: grey;
     text-align: center;
-    padding-top: 0.5vw;
+    padding-top: 12.5px;
     color: rgba(18, 2, 123);
     font-weight: 600;
     font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
-footer.footer-contact {
-    margin-top: -3px;
-    left: 0;
+/* footer.footer-contact {
     bottom: 0;
     overflow: hidden;
     height: 40px;
     background-color: grey;
     width: 100%;
     text-align: center;
-    padding-top: 0.5vw;
+    padding-top: 1vw;
     color: rgba(18, 2, 123);
     font-weight: 600;
     font-family: 'Helvetica', 'Arial', sans-serif;
     width: 100%;
-}
+} */
