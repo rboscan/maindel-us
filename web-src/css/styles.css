@@ -26,7 +26,6 @@ body div.header {
     font-size: 100%;
     padding-top: 12.5px;
     top: 0;
-    height: 40px;
     background-color: grey;
     width: 100%;
     text-align: center;
@@ -38,29 +37,34 @@ body div.header {
 /* Navbar Formatting Start */
 
 nav.navbar.navbar-expand-lg.navbar-light {
-    background-color: rgb(255, 255, 255);
-    padding-bottom:0;
-    position:fixed;
-    width:100vw;
-    z-index:2;
-    opacity:0.2;
+    background-color: rgba(255, 255, 255, 0);
+    height:70px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+    transition: 0.5s;
 }
 
-nav.navbar.navbar-expand-lg.navbar-light:hover {
-    background-color: rgb(255, 255, 255);
-    padding-bottom: 0;
-    position:fixed;
-    width:100vw;
+nav.navbar.navbar-expand-lg.navbar-light.scrolled {
+    background-color: rgb(209, 209, 209);    
+    padding-bottom: 10px;
+    padding-top:20px;
+    height: 75px;
+    position: fixed;
+    width: 100vw;
     z-index: 2;
-    opacity: 1;
+    transition: 0.5s;
 }
+
 /* Logo */
 
 .navbar-brand {
     height: 100%;
     width: 18vw;
-    min-width: 200px;
-    min-height: 60px;
+    width: 300px;
+    height: 70px;
 }
 
 /* Hamburger Icon  */
@@ -84,7 +88,7 @@ nav.navbar.navbar-expand-lg.navbar-light:hover {
     background-color: rgba(255, 255, 255, 0);
     border-radius: 0;
     border-color: rgba(255, 255, 255, 0);
-    padding: 25px 5px 25px 5px;
+    padding: 10px 5px 10px 5px;
     margin-right: 2px;
     font-size: 1.25vw;
     font-family: 'Helvetica', 'Arial', sans-serif;
@@ -98,7 +102,7 @@ nav.navbar.navbar-expand-lg.navbar-light:hover {
     background-color: rgba(18, 2, 123);
     border-radius: 0;
     background-color: rgba(18, 2, 123);
-    padding: 25px 5px 25px 5px;
+    padding: 10px 5px 10px 5px;
     margin-right: 2px;
     font-size: 1.25vw;
     font-family: 'Helvetica', 'Arial', sans-serif;
@@ -112,6 +116,7 @@ nav.navbar.navbar-expand-lg.navbar-light:hover {
     color: white;
     background-color: rgba(18, 2, 123);
     cursor: pointer;
+    padding: 10px 5px 10px 5px;
 }
 
 /* Navbar Formatting End */
@@ -122,8 +127,8 @@ nav.navbar.navbar-expand-lg.navbar-light:hover {
     text-align: -webkit-center;
 }
 
-.main-body{
-    height: 75vh;
+.main-body {
+    height: 55vh;
 }
 
 img#header {
@@ -139,45 +144,47 @@ img#header {
     transform: translate(-50%, -50%);
     padding: 10px;
 }
+
 .image-box h1 {
     font-size: 50px;
     color: white;
     font-weight: 1000;
     font-family: 'Helvetica', 'Arial', sans-serif;
     text-align: left;
-    z-index:1;
+    z-index: 1;
 }
 
-.image-box h2{
+.image-box h2 {
     font-size: 35px;
     color: white;
     font-weight: 1000;
     font-family: 'Helvetica', 'Arial', sans-serif;
-    z-index:1;
+    z-index: 1;
 }
 
-.col-sm.description{
+.col-sm.description {
     color: black;
     padding-top: 10px;
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'Helvetica', 'Arial', sans-serif;
-    margin: 0 10% 9% 10%;
+    margin: 0 6.5% 2.5% 6.5%;
+    text-align: match-parent;
 }
 
 .col-sm.description strong {
     color: black;
     padding-top: 10px;
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-weight: 700;
 }
 
-#smallbig{
+#smallbig {
     height: 500px;
     width: 500px;
 }
 
-#company-wrapper{
+#company-wrapper {
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -187,19 +194,21 @@ img#header {
 /* About Us Formatting Start*/
 
 #main-about {
-    margin: 4% 10% 0 10%;
-    height:100vh;
+    margin: 0% 10% 0 10%;
+    height: 90vh;
+    padding: 10vh 0 0 0;
 }
 
-#main-about h1{
+#main-about h1 {
     text-align: left;
     font-size: 50px;
     color: rgba(18, 2, 123);
     font-family: 'Helvetica', 'Arial', sans-serif;
     border-bottom: 3px solid;
     border-color: rgba(18, 2, 123);
-    font-weight:200px;
+    font-weight: 200px;
 }
+
 #main-about p {
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-size: 2.5vh;
@@ -220,26 +229,30 @@ img#header {
 .maria {
     margin: 2.5vw 0 5vw 0;
 }
-.maria i{
-    font-style:italic;
+
+.maria i {
+    font-style: italic;
 }
 
 .rafa {
     margin: 5vw 0 5vw 0;
 }
-.rafa i{
-    font-style:italic;
+
+.rafa i {
+    font-style: italic;
 }
+
 /* About Us Formatting End */
 
 /* Services Formatting Start */
 
-#services-row{
-    margin-top:5vh;
-    margin-bottom:5vh;
+#services-row {
+    padding-top: 12vh;
+    margin-bottom: 5vh;
     height: 100vh;
 }
-#services-row h1{
+
+#services-row h1 {
     text-align: left;
     font-size: 50px;
     color: rgba(18, 2, 123);
@@ -247,16 +260,17 @@ img#header {
     border-bottom: 3px solid;
     border-color: rgba(18, 2, 123);
 }
-#services-row h2{
+
+#services-row h2 {
     text-align: center;
     font-size: 35px;
-    padding-top:2vh;
+    padding-top: 2vh;
     border-bottom: 3px solid;
     border-color: rgba(18, 2, 123);
 }
 
-#services-row p{
-    text-align:justify;
+#services-row p {
+    text-align: justify;
     font-size: 25px;
 }
 
@@ -367,6 +381,7 @@ input:focus.form-control {
     font-weight: 600;
     font-family: 'Helvetica', 'Arial', sans-serif;
 }
+
 .index-footer {
     bottom: 0;
     height: 40px;
