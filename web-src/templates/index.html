@@ -13,31 +13,31 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse btn-group btn-group-toggle" data-toggle="buttons"
-            id="navbarSupportedContent">
-            <label class="btn btn-outline-primary active" onclick="window.location='index.html';">
-                <input type="radio" name="Home" id="home-nav" autocomplete="off" onclick="window.location='#main';" />
-                HOME
-            </label>
-            <label class="btn btn-outline-primary" onclick="window.location='#main-about';">
-                ABOUT US
-            </label>
-            <img src='../css/img/logo-transparent.png' class="navbar-brand" onclick="window.location='index.html';">
-            <label class="btn btn-outline-primary" onclick="window.location='#services-row';">
-                <input type="radio" name="Services" id="services-nav" autocomplete="off"> SERVICES
-            </label>
-            <label class="btn btn-outline-primary" onclick="window.location='#main-contactus';">
-                <input type="radio" name="Contact Us" id="contact-nav" autocomplete="off"> CONTACT US
-            </label>
+        <img src='../css/img/pyramid-transparent.png' class="navbar-brand-collapsed">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item mx-auto" id="navbar-button">
+                    <a class="nav-link" href="#">HOME</a>
+                </li>
+                <li class="nav-item mx-auto" id="navbar-button">
+                    <a class="nav-link" href="#main-about">ABOUT US</a>
+                </li>
+                <img src='../css/img/pyramid-transparent.png' class="navbar-brand mx-auto">
+                <li class="nav-item mx-auto" id="navbar-button">
+                    <a class="nav-link" href="#services-row">SERVICES</a>
+                </li>
+                <li class="nav-item mx-auto" id="navbar-button">
+                    <a class="nav-link " href="#main-contactus">CONTACT US</a>
+                </li>
+            </ul>
         </div>
     </nav>
-
-    <div class="main">
+    <div class="index-main">
         <img id="header" src="../css/img/richmond-header2.jpg">
         <div class="image-box">
             <h1>M.A. INDEL</h1>
@@ -63,54 +63,56 @@
                 </div>
             </div>
         </div>
-        <div class="container" id="main-about">
-            <h1>About Us</h1>
-            <div class="maria">
-                <img src="../css/img/stock.jpg">
-                <p>
-                    Maria Castillo - <i>Owner</i><br><br>
-                    mlcastillof@gmail.com  |  804-564-6269<br><br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a leo ex. Aenean dui augue,
-                    convallis
-                    et volutpat ut, cursus et magna. Praesent consectetur ultricies risus, elementum sollicitudin
-                    mauris.
-                    Duis ullamcorper porttitor leo. Vivamus porttitor ultricies ipsum eget semper. Etiam vitae
-                    tortor
-                    placerat, pharetra nibh a, porttitor metus. Nam at lorem id erat vehicula eleifend non non mi.
-                    Sed
-                    nec
-                    erat at orci malesuada facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et
-                    ultrices
-                    posuere cubilia Curae;
+    </div>
 
-                    Donec non dapibus ipsum, ut dignissim tortor. Aliquam erat volutpat. Nulla tortor tortor,
-                    vulputate
-                    sit
-                    amet turpis vitae, tempor finibus lectus. Nullam faucibus, ante ut cursus finibus, elit leo
-                    fermentum
-                    dui, eu sodales nisi nisl eu sem. Phasellus interdum hendrerit augue. Praesent vulputate, enim
-                    eu
-                    pharetra posuere, diam elit blandit odio, et tincidunt magna metus et turpis. Fusce euismod
-                    tortor
-                    augue, ut congue nisl viverra quis. Maecenas nec lectus ac mi porttitor finibus at lobortis mi.
-                    Nullam
-                    mollis est ut ante pulvinar tristique. Cras bibendum pellentesque mi.
-                </p>
-            </div>
-            <div class="rafa">
-                <img src="../css/img/stock.jpg">
-                <p>
-                    Rafael Boscan - <i>Co-owner, Webmaster</i><br><br>
-                    rboscan4@gmail.com  | 804-564-3039<br><br>
-                    With over 2 years experience in sourcing, Rafael has grown the company by
-                    keeping the customer's pricepoint in mind and tailoring each quote to business needs. As a
-                    company co-owner, his main role is getting in touch with multiple distributors
-                    to ensure top-of-the-line quality for every part delivered as well as handling
-                    logistics to ensure project completion is always on schedule.
-                </p>
-            </div>
+    <div class="container" id="main-about">
+        <h1>About Us</h1>
+        <div class="maria">
+            <img src="../css/img/stock.jpg">
+            <p>
+                Maria Castillo - <i>Owner</i><br><br>
+                mlcastillof@gmail.com | 804-564-6269<br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a leo ex. Aenean dui augue,
+                convallis
+                et volutpat ut, cursus et magna. Praesent consectetur ultricies risus, elementum sollicitudin
+                mauris.
+                Duis ullamcorper porttitor leo. Vivamus porttitor ultricies ipsum eget semper. Etiam vitae
+                tortor
+                placerat, pharetra nibh a, porttitor metus. Nam at lorem id erat vehicula eleifend non non mi.
+                Sed
+                nec
+                erat at orci malesuada facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et
+                ultrices
+                posuere cubilia Curae;
+
+                Donec non dapibus ipsum, ut dignissim tortor. Aliquam erat volutpat. Nulla tortor tortor,
+                vulputate
+                sit
+                amet turpis vitae, tempor finibus lectus. Nullam faucibus, ante ut cursus finibus, elit leo
+                fermentum
+                dui, eu sodales nisi nisl eu sem. Phasellus interdum hendrerit augue. Praesent vulputate, enim
+                eu
+                pharetra posuere, diam elit blandit odio, et tincidunt magna metus et turpis. Fusce euismod
+                tortor
+                augue, ut congue nisl viverra quis. Maecenas nec lectus ac mi porttitor finibus at lobortis mi.
+                Nullam
+                mollis est ut ante pulvinar tristique. Cras bibendum pellentesque mi.
+            </p>
+        </div>
+        <div class="rafa">
+            <img src="../css/img/stock.jpg">
+            <p>
+                Rafael Boscan - <i>Co-owner, Webmaster</i><br><br>
+                rboscan4@gmail.com | 804-564-3039<br><br>
+                With over 2 years experience in sourcing, Rafael has grown the company by
+                keeping the customer's pricepoint in mind and tailoring each quote to business needs. As a
+                company co-owner, his main role is getting in touch with multiple distributors
+                to ensure top-of-the-line quality for every part delivered as well as handling
+                logistics to ensure project completion is always on schedule.
+            </p>
         </div>
     </div>
+
     <div class="container" id='services-row'>
         <h1>Services</h1>
         <div class="row">
@@ -131,12 +133,14 @@
                     Not only will we source your materials and goods at a competitive cost, we will also offer
                     discounted shipping options right to your worksite or doorstep. We have partnerships
                     with different shipping services that makes it easy for us, to make it easy for you. We can
-                    also handle international shipping of restricted materials, as well as any permits you might need.
+                    also handle international shipping of restricted materials, as well as any permits you might
+                    need.
                     Make your entire project logistics an afterthought and let us handle it for you.
                 </p>
             </div>
         </div>
     </div>
+
     <div class="contactus-content" id="main-contactus">
         <div class="content-wrap">
             <div class="image-wrapper">
@@ -202,7 +206,8 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
         </script>
-        <script src="../js/header.js"></script>
+        <script src="../js/header.js"></script> -->
+        <script src="../js/scrollfade.js"></script>
 </body>
 
 </html>

@@ -1,25 +1,5 @@
-@media (min-width:320px) {
-    /* smartphones, iPhone, portrait 480x320 phones */
-}
-
-@media (min-width:481px) {
-    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-}
-
-@media (min-width:641px) {
-    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-}
-
-@media (min-width:961px) {
-    /* tablet, landscape iPad, lo-res laptops ands desktops */
-}
-
-@media (min-width:1025px) {
-    /* big landscape tablets, laptops, and desktops */
-}
-
-@media (min-width:1281px) {
-    /* hi-res laptops and desktops */
+html{
+    scroll-behavior: smooth;
 }
 
 body div.header {
@@ -36,9 +16,13 @@ body div.header {
 
 /* Navbar Formatting Start */
 
+.navbar{
+    padding: 0;
+}
+
 nav.navbar.navbar-expand-lg.navbar-light {
     background-color: rgba(255, 255, 255, 0);
-    height:70px;
+    height: 95px;
     padding-bottom: 10px;
     padding-top: 20px;
     position: fixed;
@@ -48,10 +32,10 @@ nav.navbar.navbar-expand-lg.navbar-light {
 }
 
 nav.navbar.navbar-expand-lg.navbar-light.scrolled {
-    background-color: rgb(209, 209, 209);    
+    background-color: rgb(255, 255, 255);
     padding-bottom: 10px;
-    padding-top:20px;
-    height: 75px;
+    padding-top: 20px;
+    height: 95px;
     position: fixed;
     width: 100vw;
     z-index: 2;
@@ -61,10 +45,12 @@ nav.navbar.navbar-expand-lg.navbar-light.scrolled {
 /* Logo */
 
 .navbar-brand {
-    height: 100%;
-    width: 18vw;
-    width: 300px;
-    height: 70px;
+    width: 175px;
+    height: 80px;
+    padding: 0;
+}
+.navbar-brand-collapsed {
+    display:none;
 }
 
 /* Hamburger Icon  */
@@ -78,18 +64,26 @@ nav.navbar.navbar-expand-lg.navbar-light.scrolled {
 }
 
 .navbar-light .navbar-toggler {
-    background-color: lightgrey;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(18, 2, 123);
 }
 
 /* Button Formatting */
+.navbar{
+    position:relative;
+}
 
-#navbarSupportedContent.navbar-collapse .btn {
+
+ul.navbar-nav{
+    width:100vw;
+}
+
+.navbar-light .navbar-nav .nav-link {
     color: black;
     background-color: rgba(255, 255, 255, 0);
     border-radius: 0;
     border-color: rgba(255, 255, 255, 0);
-    padding: 10px 5px 10px 5px;
-    margin-right: 2px;
+    padding: 15px 70px 15px 70px;
     font-size: 1.25vw;
     font-family: 'Helvetica', 'Arial', sans-serif;
     box-shadow: none;
@@ -97,14 +91,12 @@ nav.navbar.navbar-expand-lg.navbar-light.scrolled {
     cursor: pointer;
 }
 
-#navbarSupportedContent.navbar-collapse .btn-outline-primary:hover {
+.navbar-light .navbar-nav .nav-link:hover {
     color: white;
     background-color: rgba(18, 2, 123);
     border-radius: 0;
-    background-color: rgba(18, 2, 123);
-    padding: 10px 5px 10px 5px;
-    margin-right: 2px;
     font-size: 1.25vw;
+    padding: 15px 70px 15px 70px;
     font-family: 'Helvetica', 'Arial', sans-serif;
     box-shadow: none;
     font-weight: 600;
@@ -112,7 +104,7 @@ nav.navbar.navbar-expand-lg.navbar-light.scrolled {
     transition: 0.4s;
 }
 
-#navbarSupportedContent.navbar-collapse .btn.active {
+li.nav-item a.active {
     color: white;
     background-color: rgba(18, 2, 123);
     cursor: pointer;
@@ -123,26 +115,24 @@ nav.navbar.navbar-expand-lg.navbar-light.scrolled {
 
 /* Index/Main Formatting Start */
 
-.main {
+.index-main {
     text-align: -webkit-center;
 }
 
-.main-body {
+.index-body {
     height: 55vh;
 }
 
 img#header {
-    height: 100vh;
-    width: 100%;
+    height: 57.5vh;
+    width: 100vw;
     position: relative;
 }
 
 .image-box {
     position: absolute;
-    top: 85%;
-    left: 27.5%;
-    transform: translate(-50%, -50%);
-    padding: 10px;
+    top: 47.5vh;
+    left: 20vw;
 }
 
 .image-box h1 {
@@ -194,8 +184,6 @@ img#header {
 /* About Us Formatting Start*/
 
 #main-about {
-    margin: 0% 10% 0 10%;
-    height: 90vh;
     padding: 10vh 0 0 0;
 }
 
@@ -211,7 +199,7 @@ img#header {
 
 #main-about p {
     font-family: 'Helvetica', 'Arial', sans-serif;
-    font-size: 2.5vh;
+    font-size: 27.5px;
     text-align: left;
 }
 
@@ -235,7 +223,7 @@ img#header {
 }
 
 .rafa {
-    margin: 5vw 0 5vw 0;
+    margin: 5vw 0 0 0;
 }
 
 .rafa i {
@@ -284,6 +272,7 @@ img#header {
     background-image: url("../css/img/richmond-int3.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 100vw;
     height: 100vh;
     width: 98.9vw;
     padding: 10vh 0vh 15vh 0vh;
@@ -393,4 +382,117 @@ input:focus.form-control {
     color: rgba(18, 2, 123);
     font-weight: 600;
     font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+@media (min-width:320px) {
+    /* smartphones, iPhone, portrait 480x320 phones */
+}
+
+@media (min-width:481px) {
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+
+@media (min-width:641px) {
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+
+@media (min-width:961px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+
+@media screen and (max-width:1400px) {
+    /* hi-res laptops and desktops */
+    .navbar-brand-collapsed {
+        display:none;
+    }
+
+    nav.navbar.navbar-expand-lg.navbar-light {
+        height: 75px;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        width: 100vw;
+        transition: 0;
+    }
+    
+    nav.navbar.navbar-expand-lg.navbar-light.scrolled {
+        height: 75px;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        width: 100vw;
+        transition:0;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 1.25vw;
+        padding: 15px 40px 15px 40px;
+    }
+    
+    .navbar-light .navbar-nav .nav-link:hover {
+        font-size: 1.25vw;
+        padding: 15px 40px 15px 40px;
+    }
+    
+    li.nav-item a.active {
+        color: white;
+        background-color: rgba(18, 2, 123);
+        cursor: pointer;
+        padding: 10px 5px 10px 5px;
+    }
+   
+    img#header {
+        height: 36.5vh;
+        width: 100vw;
+        position: relative;
+    }
+    .col-sm.description {
+        color: black;
+        padding-top: 10px;
+        font-size: 25px;
+        font-family: 'Helvetica', 'Arial', sans-serif;
+        margin: 0 6.5% 2.5% 6.5%;
+        text-align: match-parent;
+    }
+    
+    .col-sm.description strong {
+        color: black;
+        padding-top: 10px;
+        font-size: 25px;
+        font-family: 'Helvetica', 'Arial', sans-serif;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width:1025px) {
+    /* big landscape tablets, laptops, and desktops */
+   .navbar{
+       position:relative;
+   }
+
+    .navbar-brand {
+        width: 175px;
+        height: 48px;
+        padding: 0;
+    }
+    .navbar-nav{
+        background:white;
+    }
+
+    .navbar-light .navbar-toggler{
+        margin-left: 30px;
+    }
+
+    nav.navbar.navbar-expand-lg.navbar-light {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+@media screen and (max-width:992px){
+    .navbar-brand-collapsed{
+        display:block;
+        position: absolute;
+        left:44.5%;
+    }
+    div ul.navbar-nav img{
+        display:none;
+    }
 }

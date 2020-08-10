@@ -12,4 +12,4 @@ if ($('.navbar').length > 0) {
     $(window).on("scroll load resize", function () {
         checkScroll();
     });
-}
+};
