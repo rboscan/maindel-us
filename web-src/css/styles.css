@@ -426,8 +426,8 @@ input:focus.form-control {
         transition: 0;
     }
     nav.navbar.navbar-expand-lg.navbar-light.scrolled {
-        height: 50px;
-        padding-bottom: 20px;
+        height: 75px;
+        padding-bottom: 10px;
         padding-top: 10px;
         width: 100vw;
         transition: 0;
@@ -489,18 +489,14 @@ input:focus.form-control {
     .navbar-nav {
         background: white;
     }
-    ul.navbar-nav{
-        margin-top: 25px;
+    .navbar-collapse{
+        margin-top: 20px;
     }
 
     .navbar-light .navbar-toggler {
         margin-left: 30px;
     }
 
-    nav.navbar.navbar-expand-lg.navbar-light {
-        background-color: rgb(255, 255, 255);
-    }
-    
     .image-box h1 {
         font-size: 35px;
         transition: 0.5s;
@@ -536,7 +532,7 @@ input:focus.form-control {
 @media screen and (max-width:991px) {
 
     .navbar-light .navbar-nav .nav-link {
-        font-size: 3.5vw;
+        font-size: 3.25vw;
     }
     
     .navbar-light .navbar-nav .nav-link:hover {
@@ -564,5 +560,26 @@ input:focus.form-control {
 
     .footer {
         height: 60px;
+    }
+}
+
+@media (max-width: 767px) /* @grid-float-breakpoint -1 */
+{
+    .navbar-fixed-top
+    {
+    position: relative;
+    top: auto;
+    }
+}
+
+@media screen and (max-width:415px ) {
+    #smallbig{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:361px ) {
+    #smallbig{
+        width: 340px;
     }
 }
