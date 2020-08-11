@@ -1,4 +1,4 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -16,7 +16,7 @@ body div.header {
 
 /* Navbar Formatting Start */
 
-.navbar{
+.navbar {
     padding: 0;
 }
 
@@ -44,13 +44,8 @@ nav.navbar.navbar-expand-lg.navbar-light.scrolled {
 
 /* Logo */
 
-.navbar-brand {
-    width: 175px;
-    height: 80px;
-    padding: 0;
-}
 .navbar-brand-collapsed {
-    display:none;
+    display: none;
 }
 
 /* Hamburger Icon  */
@@ -69,13 +64,13 @@ nav.navbar.navbar-expand-lg.navbar-light.scrolled {
 }
 
 /* Button Formatting */
-.navbar{
-    position:relative;
+
+.navbar {
+    position: relative;
 }
 
-
-ul.navbar-nav{
-    width:100vw;
+ul.navbar-nav {
+    width: 100vw;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -84,6 +79,7 @@ ul.navbar-nav{
     border-radius: 0;
     border-color: rgba(255, 255, 255, 0);
     padding: 15px 70px 15px 70px;
+    margin-top: 15px;
     font-size: 1.25vw;
     font-family: 'Helvetica', 'Arial', sans-serif;
     box-shadow: none;
@@ -97,6 +93,7 @@ ul.navbar-nav{
     border-radius: 0;
     font-size: 1.25vw;
     padding: 15px 70px 15px 70px;
+    margin-top:1 5px;
     font-family: 'Helvetica', 'Arial', sans-serif;
     box-shadow: none;
     font-weight: 600;
@@ -115,24 +112,24 @@ li.nav-item a.active {
 
 /* Index/Main Formatting Start */
 
-.index-main {
+#index-main {
     text-align: -webkit-center;
-}
-
-.index-body {
-    height: 55vh;
+    margin: 0;
+    padding: 0;
 }
 
 img#header {
     height: 57.5vh;
     width: 100vw;
     position: relative;
+    transition: 0.5s;
 }
 
 .image-box {
     position: absolute;
     top: 47.5vh;
     left: 20vw;
+    transition: 0.5s;
 }
 
 .image-box h1 {
@@ -388,24 +385,39 @@ input:focus.form-control {
     /* smartphones, iPhone, portrait 480x320 phones */
 }
 
-@media (min-width:481px) {
-    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-}
-
-@media (min-width:641px) {
-    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-}
-
-@media (min-width:961px) {
+@media (max-width:1700px) {
+    #company-wrapper {
+        padding-top: 0;
+    }
     /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .image-box {
+        top: 39.5vh;
+        left: 15vw;
+        transition: 0.5s;
+    }
+    .col-sm.description {
+        font-size: 23px;
+    }
+    .col-sm.col-sm.description strong {
+        font-size: 23px;
+    }
+    #smallbig {
+        height: 276px;
+        width: 431.8px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    #main-about {
+        padding: 12vh 0 0 0;
+    }
 }
 
 @media screen and (max-width:1400px) {
     /* hi-res laptops and desktops */
     .navbar-brand-collapsed {
-        display:none;
+        display: none;
     }
-
     nav.navbar.navbar-expand-lg.navbar-light {
         height: 75px;
         padding-bottom: 10px;
@@ -413,36 +425,43 @@ input:focus.form-control {
         width: 100vw;
         transition: 0;
     }
-    
     nav.navbar.navbar-expand-lg.navbar-light.scrolled {
-        height: 75px;
-        padding-bottom: 10px;
-        padding-top: 20px;
+        height: 50px;
+        padding-bottom: 20px;
+        padding-top: 10px;
         width: 100vw;
-        transition:0;
+        transition: 0;
     }
+    nav.navbar.navbar-expand-lg.navbar-light .navbar-toggler{
+        padding: 0;
+        font-size: 1rem;
 
+    }
     .navbar-light .navbar-nav .nav-link {
         font-size: 1.25vw;
         padding: 15px 40px 15px 40px;
     }
-    
     .navbar-light .navbar-nav .nav-link:hover {
         font-size: 1.25vw;
         padding: 15px 40px 15px 40px;
     }
-    
     li.nav-item a.active {
         color: white;
         background-color: rgba(18, 2, 123);
         cursor: pointer;
         padding: 10px 5px 10px 5px;
     }
-   
+    .image-box {
+        position: absolute;
+        top: 24vh;
+        left: 15vw;
+        transition: 0.5s;
+    }
     img#header {
         height: 36.5vh;
         width: 100vw;
         position: relative;
+        transition: 0.5s;
     }
     .col-sm.description {
         color: black;
@@ -452,7 +471,6 @@ input:focus.form-control {
         margin: 0 6.5% 2.5% 6.5%;
         text-align: match-parent;
     }
-    
     .col-sm.description strong {
         color: black;
         padding-top: 10px;
@@ -464,35 +482,87 @@ input:focus.form-control {
 
 @media screen and (max-width:1025px) {
     /* big landscape tablets, laptops, and desktops */
-   .navbar{
-       position:relative;
-   }
-
-    .navbar-brand {
-        width: 175px;
-        height: 48px;
-        padding: 0;
-    }
-    .navbar-nav{
-        background:white;
+    .navbar {
+        position: relative;
     }
 
-    .navbar-light .navbar-toggler{
+    .navbar-nav {
+        background: white;
+    }
+    ul.navbar-nav{
+        margin-top: 25px;
+    }
+
+    .navbar-light .navbar-toggler {
         margin-left: 30px;
     }
 
     nav.navbar.navbar-expand-lg.navbar-light {
         background-color: rgb(255, 255, 255);
     }
+    
+    .image-box h1 {
+        font-size: 35px;
+        transition: 0.5s;
+    }
+    
+    .image-box h2 {
+        font-size: 25px;
+        transition: 0.5s;
+    }
+
 }
 
-@media screen and (max-width:992px){
-    .navbar-brand-collapsed{
-        display:block;
+@media screen and (max-width:992px) {
+    .navbar-brand-collapsed {
+        display: block;
         position: absolute;
-        left:44.5%;
+        left: 44.5%;
+        height:45px;
     }
-    div ul.navbar-nav img{
-        display:none;
+    
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 4vw;
+    }
+    
+    .navbar-light .navbar-nav .nav-link:hover {
+        font-size: 4vw;
+    }
+
+    div ul.navbar-nav img {
+        display: none;
+    }
+}
+@media screen and (max-width:991px) {
+
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 3.5vw;
+    }
+    
+    .navbar-light .navbar-nav .nav-link:hover {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .image-box {
+        position: absolute;
+        top: 27vh;
+        left: 12.5vw;
+        transition: 0.5s;
+    }
+
+    .image-box h1 {
+        font-size: 25px;
+        transition: 0.5s;
+    }
+    
+    .image-box h2 {
+        font-size: 15px;
+        transition: 0.5s;
+    }
+
+    .footer {
+        height: 60px;
     }
 }
