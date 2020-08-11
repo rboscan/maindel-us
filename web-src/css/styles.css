@@ -93,7 +93,7 @@ ul.navbar-nav {
     border-radius: 0;
     font-size: 1.25vw;
     padding: 15px 70px 15px 70px;
-    margin-top:1 5px;
+    margin-top: 1 5px;
     font-family: 'Helvetica', 'Arial', sans-serif;
     box-shadow: none;
     font-weight: 600;
@@ -116,6 +116,7 @@ li.nav-item a.active {
     text-align: -webkit-center;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 img#header {
@@ -127,13 +128,13 @@ img#header {
 
 .image-box {
     position: absolute;
-    top: 47.5vh;
-    left: 20vw;
     transition: 0.5s;
+    bottom: 30px;
+    left: 10vw;
 }
 
 .image-box h1 {
-    font-size: 50px;
+    font-size: 75px;
     color: white;
     font-weight: 1000;
     font-family: 'Helvetica', 'Arial', sans-serif;
@@ -142,7 +143,7 @@ img#header {
 }
 
 .image-box h2 {
-    font-size: 35px;
+    font-size: 45px;
     color: white;
     font-weight: 1000;
     font-family: 'Helvetica', 'Arial', sans-serif;
@@ -166,9 +167,18 @@ img#header {
     font-weight: 700;
 }
 
+#logocolumn{
+    padding-top: 5%;
+}
+
 #smallbig {
-    height: 500px;
-    width: 500px;
+    width: 100%;
+    height: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    min-height: 265px;
+    min-width: 343px;
 }
 
 #company-wrapper {
@@ -196,7 +206,7 @@ img#header {
 
 #main-about p {
     font-family: 'Helvetica', 'Arial', sans-serif;
-    font-size: 27.5px;
+    font-size: 25px;
     text-align: left;
 }
 
@@ -232,9 +242,9 @@ img#header {
 /* Services Formatting Start */
 
 #services-row {
-    padding-top: 12vh;
-    margin-bottom: 5vh;
-    height: 100vh;
+    padding-top: 19vh;
+    padding-bottom: 66vh;
+
 }
 
 #services-row h1 {
@@ -248,7 +258,7 @@ img#header {
 
 #services-row h2 {
     text-align: center;
-    font-size: 35px;
+    font-size: 1.75rem;
     padding-top: 2vh;
     border-bottom: 3px solid;
     border-color: rgba(18, 2, 123);
@@ -263,39 +273,39 @@ img#header {
 
 /* Contact Us Formatting Start */
 
-.contactus-content {
+#main-contactus {
     position: relative;
-    height: 100vh;
     background-image: url("../css/img/richmond-int3.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100vw;
-    height: 100vh;
-    width: 98.9vw;
-    padding: 10vh 0vh 15vh 0vh;
+    background-size: cover;
+    height: 95vh;
+    width: 100vw;
+    padding: 25vh 0vh 0vh 0vh;
 }
 
-div.contact-us {
+
+div#contact-us {
     position: relative;
     backdrop-filter: blur(15px);
     background-color: rgba(0, 0, 0, 0.404);
-    margin-top: 5vh;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 3%;
-    width: 750px;
-    height: 540px;
     padding: 20px 20px 20px 20px;
     font-family: 'Helvetica', 'Arial', sans-serif;
+    width: 65vw;
+    display: block;
 }
 
-div.contact-us p {
+div#contact-us p {
     color: rgb(255, 255, 255);
     font-size: 25px;
     font-weight: 700;
     font-family: 'Helvetica', 'Arial', sans-serif;
     text-align: center;
     padding-bottom: 15px;
+}
+
+form {
+    display: block;
 }
 
 .form-row label {
@@ -326,6 +336,7 @@ input.form-control {
     margin-left: auto;
     font-family: 'Helvetica', 'Arial', sans-serif;
     color: black;
+    transition: 0.5s;
 }
 
 input:focus.form-control {
@@ -350,36 +361,22 @@ input:focus.form-control {
 
 /* Footer */
 
-.footer .container {
+#footer .container {
     width: 100%;
 }
 
-.footer {
-    position: absolute;
-    bottom: 0;
-    height: 40px;
+footer {
     width: 100%;
-    font-size: 100%;
+    font-size: 25px;
     background-color: grey;
     text-align: center;
-    padding-top: 12.5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     color: rgba(18, 2, 123);
     font-weight: 600;
     font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
-.index-footer {
-    bottom: 0;
-    height: 40px;
-    width: 100%;
-    font-size: 100%;
-    background-color: grey;
-    text-align: center;
-    padding-top: 12.5px;
-    color: rgba(18, 2, 123);
-    font-weight: 600;
-    font-family: 'Helvetica', 'Arial', sans-serif;
-}
 
 @media (min-width:320px) {
     /* smartphones, iPhone, portrait 480x320 phones */
@@ -389,42 +386,27 @@ input:focus.form-control {
     #company-wrapper {
         padding-top: 0;
     }
-    /* tablet, landscape iPad, lo-res laptops ands desktops */
-    .image-box {
-        top: 39.5vh;
-        left: 15vw;
-        transition: 0.5s;
-    }
-    .col-sm.description {
-        font-size: 23px;
-    }
-    .col-sm.col-sm.description strong {
-        font-size: 23px;
-    }
-    #smallbig {
-        height: 276px;
-        width: 431.8px;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
+
     #main-about {
         padding: 12vh 0 0 0;
     }
 }
 
 @media screen and (max-width:1400px) {
+
     /* hi-res laptops and desktops */
     .navbar-brand-collapsed {
         display: none;
     }
+
     nav.navbar.navbar-expand-lg.navbar-light {
         height: 75px;
         padding-bottom: 10px;
-        padding-top: 20px;
+        padding-top: 10px;
         width: 100vw;
         transition: 0;
     }
+
     nav.navbar.navbar-expand-lg.navbar-light.scrolled {
         height: 75px;
         padding-bottom: 10px;
@@ -432,37 +414,37 @@ input:focus.form-control {
         width: 100vw;
         transition: 0;
     }
-    nav.navbar.navbar-expand-lg.navbar-light .navbar-toggler{
+
+    nav.navbar.navbar-expand-lg.navbar-light .navbar-toggler {
         padding: 0;
         font-size: 1rem;
 
     }
+
     .navbar-light .navbar-nav .nav-link {
         font-size: 1.25vw;
         padding: 15px 40px 15px 40px;
     }
+
     .navbar-light .navbar-nav .nav-link:hover {
         font-size: 1.25vw;
         padding: 15px 40px 15px 40px;
     }
+
     li.nav-item a.active {
         color: white;
         background-color: rgba(18, 2, 123);
         cursor: pointer;
         padding: 10px 5px 10px 5px;
     }
-    .image-box {
-        position: absolute;
-        top: 24vh;
-        left: 15vw;
-        transition: 0.5s;
-    }
+
     img#header {
         height: 36.5vh;
         width: 100vw;
         position: relative;
         transition: 0.5s;
     }
+
     .col-sm.description {
         color: black;
         padding-top: 10px;
@@ -471,6 +453,7 @@ input:focus.form-control {
         margin: 0 6.5% 2.5% 6.5%;
         text-align: match-parent;
     }
+
     .col-sm.description strong {
         color: black;
         padding-top: 10px;
@@ -481,15 +464,13 @@ input:focus.form-control {
 }
 
 @media screen and (max-width:1025px) {
+
     /* big landscape tablets, laptops, and desktops */
     .navbar {
         position: relative;
     }
 
-    .navbar-nav {
-        background: white;
-    }
-    .navbar-collapse{
+    .navbar-collapse {
         margin-top: 20px;
     }
 
@@ -501,7 +482,7 @@ input:focus.form-control {
         font-size: 35px;
         transition: 0.5s;
     }
-    
+
     .image-box h2 {
         font-size: 25px;
         transition: 0.5s;
@@ -510,17 +491,21 @@ input:focus.form-control {
 }
 
 @media screen and (max-width:992px) {
+    .navbar-nav {
+        background: white;
+    }
+
     .navbar-brand-collapsed {
         display: block;
         position: absolute;
         left: 44.5%;
-        height:45px;
+        height: 45px;
     }
-    
+
     .navbar-light .navbar-nav .nav-link {
         font-size: 4vw;
     }
-    
+
     .navbar-light .navbar-nav .nav-link:hover {
         font-size: 4vw;
     }
@@ -529,30 +514,25 @@ input:focus.form-control {
         display: none;
     }
 }
+
 @media screen and (max-width:991px) {
 
     .navbar-light .navbar-nav .nav-link {
         font-size: 3.25vw;
     }
-    
+
     .navbar-light .navbar-nav .nav-link:hover {
         font-size: 4vw;
     }
 }
 
 @media screen and (max-width: 769px) {
-    .image-box {
-        position: absolute;
-        top: 27vh;
-        left: 12.5vw;
-        transition: 0.5s;
-    }
 
     .image-box h1 {
         font-size: 25px;
         transition: 0.5s;
     }
-    
+
     .image-box h2 {
         font-size: 15px;
         transition: 0.5s;
@@ -563,23 +543,41 @@ input:focus.form-control {
     }
 }
 
-@media (max-width: 767px) /* @grid-float-breakpoint -1 */
-{
-    .navbar-fixed-top
+@media (max-width: 767px)
+
+/* @grid-float-breakpoint -1 */
     {
-    position: relative;
-    top: auto;
+    #main-contactus {
+        padding: 16vh 0 0 0;
+    }
+
+    div#contact-us {
+        width: 100vw;
+    }
+
+    input.form-control {
+        width: 100%;
+        transition: 0.5s;
+    }
+
+    .navbar-fixed-top {
+        position: relative;
+        top: auto;
     }
 }
 
-@media screen and (max-width:415px ) {
-    #smallbig{
-        width: 400px;
+@media screen and (max-width: 600px) {
+    #main-contactus {
+        padding: 16vh 0 0 0;
     }
-}
 
-@media screen and (max-width:361px ) {
-    #smallbig{
-        width: 340px;
+    img#header {
+        height: 36.5vh;
+        transition: 0.5s;
     }
+
+    #smallbig {
+        display: block;
+    }
+
 }
