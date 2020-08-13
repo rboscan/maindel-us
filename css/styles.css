@@ -134,7 +134,7 @@ img#header {
 }
 
 .image-box h1 {
-    font-size: 75px;
+    font-size: 5em;
     color: white;
     font-weight: 1000;
     font-family: 'Helvetica', 'Arial', sans-serif;
@@ -143,7 +143,7 @@ img#header {
 }
 
 .image-box h2 {
-    font-size: 45px;
+    font-size: 3.5em;
     color: white;
     font-weight: 1000;
     font-family: 'Helvetica', 'Arial', sans-serif;
@@ -153,7 +153,7 @@ img#header {
 .col-sm.description {
     color: black;
     padding-top: 10px;
-    font-size: 30px;
+    font-size: 1.75em;
     font-family: 'Helvetica', 'Arial', sans-serif;
     margin: 0 6.5% 2.5% 6.5%;
     text-align: match-parent;
@@ -162,7 +162,7 @@ img#header {
 .col-sm.description strong {
     color: black;
     padding-top: 10px;
-    font-size: 30px;
+    font-size: 1em;
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-weight: 700;
 }
@@ -441,23 +441,28 @@ input:focus.form-control {
         transition: 0.5s;
     }
 
+    .image-box h1 {
+        font-size: 3em;
+        transition: 0.5s;
+    }
+
+    .image-box h2 {
+        font-size: 2.75em;
+        transition: 0.5s;
+    }
+
+
     .col-sm.description {
-        color: black;
-        padding-top: 10px;
-        font-size: 25px;
-        font-family: 'Helvetica', 'Arial', sans-serif;
-        margin: 0 6.5% 2.5% 6.5%;
-        text-align: match-parent;
+        font-size: 1.50em;
+        transition:0.5s;
     }
 
     .col-sm.description strong {
-        color: black;
-        padding-top: 10px;
-        font-size: 25px;
-        font-family: 'Helvetica', 'Arial', sans-serif;
-        font-weight: 700;
+        font-size: 1.50em;
+        transition:0.5s;
     }
 }
+
 
 @media screen and (max-width:1025px) {
 
@@ -475,35 +480,34 @@ input:focus.form-control {
     }
 
     .image-box h1 {
-        font-size: 35px;
+        font-size: 2.5em;
         transition: 0.5s;
     }
 
     .image-box h2 {
-        font-size: 25px;
+        font-size: 2em;
         transition: 0.5s;
+    }
+    .col-sm.description {
+        font-size: 1.5em;
+        transition:0.5s;
+    }
+
+    .col-sm.description strong {
+        font-size: 1.5em;
+        transition:0.5s;
     }
 
 }
 
 @media screen and (max-width:992px) {
-    .navbar-nav {
-        background: white;
-    }
+
 
     .navbar-brand-collapsed {
         display: block;
         position: absolute;
         left: 44.5%;
         height: 45px;
-    }
-
-    .navbar-light .navbar-nav .nav-link {
-        font-size: 4vw;
-    }
-
-    .navbar-light .navbar-nav .nav-link:hover {
-        font-size: 4vw;
     }
 
     div ul.navbar-nav img {
@@ -520,17 +524,31 @@ input:focus.form-control {
     .navbar-light .navbar-nav .nav-link:hover {
         font-size: 4vw;
     }
+
+    .col-sm.description {
+        font-size: 1.25em;
+        transition:0.5s;
+    }
+
+    .col-sm.description strong {
+        font-size: 1.25em;
+        transition:0.5s;
+    }
+    .navbar-nav{
+        background:white;
+    }
+
 }
 
 @media screen and (max-width: 769px) {
 
     .image-box h1 {
-        font-size: 25px;
+        font-size: 2em;
         transition: 0.5s;
     }
 
     .image-box h2 {
-        font-size: 15px;
+        font-size: 1.5em;
         transition: 0.5s;
     }
 
@@ -540,8 +558,6 @@ input:focus.form-control {
 }
 
 @media (max-width: 767px) {
-
-/* @grid-float-breakpoint -1 */
 
     div#contact-us {
         width: 100vw;
@@ -569,4 +585,16 @@ input:focus.form-control {
         display: block;
     }
 
+}
+
+@media screen and (max-width: 519px) {
+    .image-box h1 {
+        font-size: 1.5em;
+        transition: 0.5s;
+    }
+
+    .image-box h2 {
+        font-size: 1em;
+        transition: 0.5s;
+    }
 }
