@@ -546,6 +546,15 @@ input:focus.form-control {
         font-size: 2em;
         transition: 0.5s;
     }
+    .col-sm.description {
+        font-size: 1.5em;
+        transition:0.5s;
+    }
+
+    .col-sm.description strong {
+        font-size: 1.5em;
+        transition:0.5s;
+    }
 
     .col-sm.description {
         font-size: 1.5em;
