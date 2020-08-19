@@ -66,11 +66,14 @@ nav.navbar.navbar-expand-lg.navbar-light.scrolled {
 /* Button Formatting */
 
 .navbar {
-    position: relative;
+    top: 0;
+    position: sticky;
 }
 
 ul.navbar-nav {
     width: 100vw;
+    position: sticky;
+    top: 0;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -404,7 +407,7 @@ input:focus.form-control {
 
 @media (max-width:1700px) {
     #services-row {
-        padding: 19vh 0 35vh 0;
+        padding: 19vh 10vh 35vh 10vh;
     }
     /* main formatting */
     .image-box h1 {
@@ -794,6 +797,11 @@ input:focus.form-control {
     }
 }
 
+@media screen and (max-width: 400px){
+    #logo-contact2{
+        font-size: 0.95em;
+    }
+}
 /* Safari 11+ */
 @media not all and (min-resolution:.001dpcm)
 { @supports (-webkit-appearance:none) and (stroke-color:transparent) {
