@@ -30,9 +30,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light static-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <img src='../css/img/pyramid-transparent.png' alt="M.A. Indel Pyramid with Rising Sun"
-            class="navbar-brand-collapsed">
+            class="navbar-brand-collapsed mx-auto">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -114,44 +114,40 @@
     </div>
     <div class="container-fluid" id='services-row'>
         <h1>Services</h1>
-        <div class="row" id="services">
-            <div class="col-sm">
+        <div class="row" >
+            <div class="col-md">
+                <img src="../css/img/sourcing2.jpg" alt="magnifying glass on laptop">
                 <div class="container">
                     <h2>Sourcing</h2>
-                    <img src="../css/img/sourcing.jpg" alt="Warehouse">
+                    <p>
+                        We will source any material or good at a competitive price
+                        by doing market research for you. We aim to keep OEM/New quality for
+                        parts purchased and will go over item specifics with you to ensure
+                        we arrive at the best solution.
+                    </p>
                 </div>
-                <p>
-                    We will work diligently to find suppliers for materials needed at
-                    the best cost available in the market. With partners
-                    in Europe and suppliers across all 50 states, rest assured we can get the parts you need
-                    for the best price. We work in sectors including, but not limited to, energy, healthcare,
-                    industrials, and materials. All you need to do is send in a list or RFQ
-                    of the required items needed for your project and we will handle the rest.
-                </p>
             </div>
-            <div class="col-sm">
+            <div class="col-md" id="services-border">
+                <img src="../css/img/research.jpg" alt="magnifying glass on gears">
+                <div class="container">
+                    <h2>Research</h2>
+                    <p>
+                        We can research custom solutions were the need to arise. In the
+                        past we've ordered yeast agitating tanks for a brewery, augers, and diesel generators.
+                        Just send us the specifications or throughput needs and we'll take care of the rest
+                    </p>
+                </div>
+            </div>
+            <div class="col-md">
+                <img src="../css/img/plane2.jpg" alt="Airplane">
                 <div class="container">
                     <h2>Logistics</h2>
-                    <img src="../css/img/logistics2.jpg" alt="Dock with Truck, Boat and Airplane">
+                    <p>
+                        We can also take care of shipping and provide a logistics solution for your needs.
+                        We have discounted rates with major shipping organizations and can ship restricted
+                        items abroad.
+                    </p>
                 </div>
-                <p>
-                    Not only will we source your materials and goods at a competitive cost, we will also offer
-                    discounted shipping options right to your worksite or doorstep. We have partnerships
-                    with different shipping services that makes it easy for us, to make it easy for you. We can
-                    also handle international shipping of restricted materials.
-                    Make your entire project logistics an afterthought and let us handle it for you.
-                </p>
-            </div>
-        </div>
-        <div class="row" id="shipping">
-            <div class="col-4">
-                <img src="../css/img/dhl-monochrome.png" alt="dhl logo">
-            </div>
-            <div class="col-4">
-                <img src="../css/img/fedex-monochrome.png" alt="fedex logo">
-            </div>
-            <div class="col-4">
-                <img src="../css/img/ups-monochrome.png" alt="ups logo">
             </div>
         </div>
     </div>
@@ -185,6 +181,10 @@
                         <textarea class="form-control" id="message-box" rows="5" placeholder="Quote/Request"></textarea>
                     </div>
                 </form>
+                <div class="document-upload">
+                    <label>Please upload PDF files with relevant quote information (up to 25mbs)</label>
+                    <button type="button" class="btn btn-lg btn-primary">DOCUMENT UPLOAD</button>
+                </div>
                 <div class="center-button">
                     <button type="button" class="btn btn-lg btn-primary">SUBMIT</button>
                 </div>
@@ -193,33 +193,41 @@
     </div>
     <div class="container-fluid" id="footer">
         <div class="row">
-            <div class="col">
-                <p> sales@maindel.us
-                </p>
+            <div class="col-sm" id="rights-reserved">
+                <a href="../templates/tcs.html" class="underline"> Terms and Conditions </a>
             </div>
-            <div class="col">
-                <p> © 2019 M.A. INDEL, LLC
-                </p>
+            <div class="col-sm" id="rights-reserved">
+                <p> © 2019 M.A. INDEL, LLC</p>
+                <p> All Rights Reserved</p>
             </div>
-            <div class="w-100"></div>
-            <div class="col">
-                <p> +1-804-564-3039
-                </p>
+            <div class="col-sm" id="rights-reserved">
+                <a href="../templates/privacy.html" class="underline"> Privacy </a>
             </div>
-            <div class="col">
-                <span> All Rights Reserved </span>
+        </div>
+    </div>
+    <div class="container-fluid" id="footer-reordered">
+        <div class="row">
+            <div class="col-sm" id="rights-reserved">
+                <a href="../templates/tcs.html" class="underline"> Terms and Conditions </a>
+            </div>
+            <div class="col-sm" id="rights-reserved">
+                <a href="../templates/privacy.html" class="underline"> Privacy </a>
+            </div>
+            <div class="col-sm" id="rights-reserved">
+                <p> © 2019 M.A. INDEL, LLC</p>
+                <p> All Rights Reserved</p>
             </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="../js/header.js"></script>
     <script src="../js/scrollfade.js"></script>
 </body>
