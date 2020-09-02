@@ -464,7 +464,16 @@ input[type="text"]:after {
     font-size: 0.75em;
 }
 
+.col#rights-reserved-menu {
+    padding-top: 10px;
+    font-size: 0.75em;
+}
+
 #rights-reserved a {
+    color: rgba(18, 2, 123);
+}
+
+.col#rights-reserved-menu a {
     color: rgba(18, 2, 123);
 }
 
@@ -472,6 +481,9 @@ input[type="text"]:after {
     text-decoration: none;
 }
 
+.col#rights-reserved-menu a:hover {
+    text-decoration: none;
+}
 .underline {
     display: inline;
     position: relative;
@@ -951,7 +963,9 @@ input[type="text"]:after {
         position: relative;
         top: auto;
     }
-
+    #services-row .col-md{
+        padding: 20px 0 20px 0;
+    }
     #services-border{
         border: none;
     }
