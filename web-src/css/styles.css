@@ -464,16 +464,7 @@ input[type="text"]:after {
     font-size: 0.75em;
 }
 
-.col#rights-reserved-menu {
-    padding-top: 10px;
-    font-size: 0.75em;
-}
-
 #rights-reserved a {
-    color: rgba(18, 2, 123);
-}
-
-.col#rights-reserved-menu a {
     color: rgba(18, 2, 123);
 }
 
@@ -481,9 +472,26 @@ input[type="text"]:after {
     text-decoration: none;
 }
 
-.col#rights-reserved-menu a:hover {
-    text-decoration: none;
+#rights-reserved-menu {
+    padding-top: 10px;
+    font-size: 0.65em;
 }
+
+#rights-reserved-menu a {
+    color: rgba(18, 2, 123);
+    padding: 1vh 1vh 0 1vh;
+}
+
+#rights-reserved-2 {
+    padding-top: 10px;
+    font-size: 0.5em;
+}
+
+#rights-reserved-2 {
+    color: rgba(18, 2, 123);
+    padding: 1vh 1vh 0 1vh;
+}
+
 .underline {
     display: inline;
     position: relative;
@@ -963,9 +971,7 @@ input[type="text"]:after {
         position: relative;
         top: auto;
     }
-    #services-row .col-md{
-        padding: 20px 0 20px 0;
-    }
+
     #services-border{
         border: none;
     }
@@ -1055,6 +1061,12 @@ input[type="text"]:after {
         padding-top: 15px;
         padding-bottom: 15px;
     }
+
+    #rights-reserved-menu {
+        padding-top: 10px;
+        font-size: 0.65em;
+    }
+    
 }
 
 @media screen and (max-width: 575px) {
